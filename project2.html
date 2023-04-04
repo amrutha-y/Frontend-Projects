@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS HTML Project</title>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .wrapper{
+        background: url(./612547.jpg)  no-repeat;
+        background-size: cover;
+        height: 100vh;
+        
+    }
+    .navbar{
+        height: 80px;
+        width: 100%;
+        background: rgba(0,0,0,0.4);
+    }
+    .logo{
+        width: 140px;
+        height: auto;
+        padding: 0px 30px;
+        
+    }
+    .navbar ul{
+        float: right;
+        margin-right: 20px;
+        
+    }
+    .navbar ul li{
+        list-style:none;
+        margin: 0px 8px;
+        display: inline-block;
+        line-height: 80px;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 6px 13px;
+        font-family: 'Times New Roman', Times, serif;
+        transition: .4s;
+        
+    }
+    .navbar ul li a.active,
+    .navbar ul li a:hover{
+        background: rgb(180, 44, 123);
+        border-radius:2px;
+    }
+    .wrapper .center{
+        position:absolute;
+        top:50%;
+        left:55%;
+        transform: translate(-50%,-50%);
+        font-family: sans-serif;
+        user-select: none;
+    }
+    .center h1{
+        color: black;
+        font-size: 60px;
+        font-weight: bold;
+        width: 900px;
+        text-align: center;
+    }
+    .center h2{
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+        width: 800px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .center .buttons{
+        margin: 50px 280px 0px 300px;
+    }
+    .buttons button{
+        height: 40px;
+        width: 100px;
+        font-size: 18px;
+        font-weight: bold;
+        color:whitesmoke;
+        background: rgb(180, 44, 123);
+        border:1px solid #cc0000;
+        outline: none;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: .4s;
+    }
+    .buttons .btn{
+        margin-left: 25px;
+    }
+    .buttons button:hover{
+        background: rgb(172, 84, 172);
+    }
+</style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar">
+                <img class="logo" src="./481903.png">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#">Updates</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="center">
+                <h1>Welcome to webpage</h1>
+                <h2>Think and Create new</h2>
+                <div class="buttons">
+                    <button>Explore</button>
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
